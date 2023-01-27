@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+   
+
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">관리자님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+        <div class="teamTitBox">
+            <dl class="teamTit">
+                <dt>2022년 K-인공지능 제조데이터 분석 경진대회</dt>
+                <dd>202005010001</dd>
+            </dl>
+        </div>
+
+		<!-- 대회 상세 -->
+		<div class="container">
+            <ul class="tabBox">
+                <li><a href="contesTeam.html" class="on">참가팀상태</a></li>
+                <li><a href="evaluation.html">과제평가</a></li>
+                <li><a href="awards.html">수상팀</a></li>
+                <li><a href="joinAgree.html">참가동의이력</a></li>
+            </ul>
+            
+            <div class="heading-top">
+                <h2>참가팀 상태</h2>
+            </div>
+            <div class="table-type">
+                <div class="table-scope">
+                    <div class="all">
+                        <div class="mid-search">
+                            <select>
+                                <option value="">선택</option>
+                                <option value="NOTICE.TITLE">제목</option>
+                            </select>
+                            <div class="search-box">
+                                <input type="text" id="SEARCH_TXT" name="SEARCH_TXT" value="" placeholder="검색">
+                                <button type="button" class="btn-search">검색</button>
+                            </div>
+                        </div>
+                    </div>     
+                    <div>
+                        <div class="txt-r">    
+                            <a href="contesDetail.html"  class="btn largeT primary">팀 삭제</a>
+                            <a href="contesDetail.html"  class="btn largeT primary">선택 팀 상태변경</a>
+                        </div>
+                   </div>             
+                </div>
+            
+                <table class="table-list-type">
+                    <colgroup>
+                        <col width="5%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="*">
+                        <col width="754px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th> 
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG" name="">
+                                    <label for="Team_FLAG"><span></span></label>
+                                </div>
+                            </th>
+                            <th>No</th>
+                            <th>팀</th>
+                            <th>현재상태</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>                    
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG01" name="">
+                                    <label for="Team_FLAG01"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20015</td>
+                            <td><button onclick="doPop(1)"> Ensembler</button></td>
+                            <td class="txt-l">[1] 신청서 작성중</td>
+                            <td class="teamStep01">
+                                <span>[1] 신청서 작성중</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG02" name="">
+                                    <label for="Team_FLAG02"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[2] 신청 완료</td>
+                            <td class="teamStep02">
+                                <span>[2] 신청 완료</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG03" name="">
+                                    <label for="Team_FLAG03"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[3] 과제 제출 대기</td>
+                            <td class="teamStep03">
+                                <span>[3] 과제 제출 대기</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG04" name="">
+                                    <label for="Team_FLAG04"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[4] 과제 등록중</td>
+                            <td class="teamStep04">
+                                <span>[4] 과제 등록중</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG05" name="">
+                                    <label for="Team_FLAG05"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[5] 과제 제출 완료</td>
+                            <td class="teamStep05">
+                                <span>[5] 과제 제출 완료</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG06" name="">
+                                    <label for="Team_FLAG06"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[6] 1차 평가 대기</td>
+                            <td class="teamStep06">
+                                <span>[6] 1차 평가 대기</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG07" name="">
+                                    <label for="Team_FLAG07"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[7] 1차 평가 완료</td>
+                            <td class="teamStep07">
+                                <span>[7] 1차 평가 완료</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG08" name="">
+                                    <label for="Team_FLAG08"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[8] 1차 평가 결과 발표</td>
+                            <td class="teamStep08">
+                                <span>[8] 1차 평가 결과 발표</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG09" name="">
+                                    <label for="Team_FLAG09"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[9] 2차 평가 서류 등록중</td>
+                            <td class="teamStep09">
+                                <span>[9] 2차 평가 서류 등록중</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG10" name="">
+                                    <label for="Team_FLAG10"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[10] 2차 평가 대기</td>
+                            <td class="teamStep10">
+                                <span>[10] 2차 평가 대기</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG11" name="">
+                                    <label for="Team_FLAG11"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[11] 2차 평가 완료</td>
+                            <td class="teamStep11">
+                                <span>[11] 2차 평가 완료</span>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="Team_FLAG12" name="">
+                                    <label for="Team_FLAG12"><span></span></label>
+                                </div>
+                            </td>
+                            <td>20014</td>
+                            <td>ELSSA</td>
+                            <td class="txt-l">[12] 2차 평가 결과 발표</td>
+                            <td class="teamStep12">
+                                <span>[12] 2차 평가 결과 발표</span>
+                            </td>
+                        </tr>                  
+                    </tbody>
+                </table>
+
+            </div> 
+
+            <div class="pageBox">
+                <select id="LINE_PER_PAGE" name="LINE_PER_PAGE">                  
+                    <option value="10">10개씩보기</option>
+                    <option value="15">15개씩보기</option>
+                    <option value="30">30개씩보기</option>
+                </select>
+           
+                <div class="page-area">
+                    <a class="prev" href="#"></a>
+                    <a class="on" href="#">1</a>
+                    <a class="" href="#">2</a>
+                    <a class="next" href="#"></a>
+                </div>
+            </div>
+
+        </div>
+		<!-- // 대회 상세 -->   
+
+	</div>
+	<!-- wrap -->
+
+
+    
+</body>
+
+</html>

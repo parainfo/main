@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+   
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">관리자님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- 게시판 리스트 -->
+		<div class="container">
+            <div class="path">
+                <ul>
+                    <li>Home</li>
+                    <li>공지사항 관리 </li>
+                </ul>
+            </div>
+            <div class="heading-top">
+                <h2>공지사항 관리</h2>
+            </div>
+            <div class="table-type">
+                <table class="table-detail-type">
+                    <colgroup>
+                        <col width="17%">
+                        <col width="*">
+                        <col width="17%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>제목</th>
+                            <td colspan="3">
+                                <input type="text" id="TITLE" name="TITLE" placeholder="" value="2021년 제조데이터 공동활용 플랫폼 기술개발 사업 시행계획 공고">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>동록자</th>
+                            <td>관리자</td>
+                            <th>등록일</th>
+                            <td>2021-03-11</td>
+                        </tr>
+                        <tr>
+                            <th>파일첨부</th>
+                                <td colspan="3">
+                                    <div class="box-file-input">
+                                        <label><input type="file" id="loadFile" value="" name="file1" class="file-input"></label>
+                                          <span class="files"><div class="fileNameLine" name="filename"><p><span>(중소벤처기업부+2021-168호)+2021년+제조데이터공동활용플랫폼+기술개발(R&amp;D)+시행+공고.hwp</span></p> <a href="#" class="fClose" onclick="doFileDel('902',this)"></a></div></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        <tr>
+                            <th>합격팀 명단선택</th>
+                            <td>
+                                <select>
+                                    <option>대회명</option>
+                                </select>
+                            </td>
+                            <td colspan="2">
+                                <input type="radio" name="passTime" id="pass01" class="inputRadio"><label for="pass01">1차</label>
+                                <input type="radio" name="passTime" id="pass02" class="inputRadio"><label for="pass02">2차</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>공지분류</th>
+                            <td colspan="3">
+                                <input type="radio" name="passTime2" id="passA01" class="inputRadio"><label for="passA01">일반</label>
+                                <input type="radio" name="passTime2" id="passA02" class="inputRadio"><label for="passA02">1차</label>
+                                <input type="radio" name="passTime2" id="passA03" class="inputRadio"><label for="passA03">2차</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>노출여부</th>
+                            <td colspan="3">
+                                <div class="check-wrap">
+                                    <input type="checkbox" id="DATA_FLAG" name="DATA_FLAG" checked>
+                                    <label for="DATA_FLAG"><span></span>노출</label>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>내용</th>
+                            <td colspan="3">
+                                <textarea rows="10" cols="30" id="ir1" name="content" style="width: 950px; height: 350px; "></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <a href="#"  class="btn large">취소</a>
+                <a href="#"  class="btn large primary">저장</a>
+                <a href="#"  class="btn large">삭제</a>
+            </div>
+        </div>
+		<!-- // 게시판 리스트 -->
+
+	</div>
+	<!-- wrap -->
+</body>
+
+</html>

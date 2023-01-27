@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">관리자님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- 대회 상세 -->
+		<div class="container">
+            <div class="path">
+                <ul>
+                    <li>Home</li>
+                    <li>대회목록 관리</li>
+                </ul>
+            </div>
+            <div class="heading-top">
+                <h2>대회목록 관리</h2>
+            </div>
+            <div class="table-type">
+            
+            
+                <table class="table-detail-type">
+                    <colgroup>
+                        <col width="17%">
+                        <col width="*">
+                        <col width="17%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>                    
+                    <tr>
+                        <th>대회번호</th>
+                        <td colspan="3">
+                            1
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>대회명</th>
+                        <td colspan="3"><input type="text" ></td>
+                    </tr>
+                    <tr>
+                        <th>주관기관</th>
+                        <td colspan="3"><input type="text" ></td>
+                    </tr>
+                    <tr>
+                        <th>상태</th>
+                        <td colspan="3">
+                            <input type="radio" name="passTime2" id="passA01" class="inputRadio"><label for="passA01">예정</label>
+                            <input type="radio" name="passTime2" id="passA02" class="inputRadio"><label for="passA02">진행중</label>
+                            <input type="radio" name="passTime2" id="passA03" class="inputRadio"><label for="passA03">종료</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>대회부가정보</th>
+                        <td colspan="3"><input type="text" ></td>
+                    </tr>
+                    <tr>
+                        <th>대회일정</th>
+                        <td colspan="3" class="date-box">
+                            <div class="item">
+                                <div class="input">
+                                    <span class="space">시작</span>
+                                    <input type="date" id="START_DT" name="START_DT">
+                                </div>
+                                <span class="space">~</span>
+                                <div class="input">
+                                    <span class="space">종료</span>
+                                    <input type="date" id="END_DT" name="END_DT">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>팀구성기간</th>
+                        <td colspan="3" class="date-box">
+                            <div class="item">
+                                <div class="input">
+                                    <span class="space">시작</span>
+                                    <input type="date" id="START_DT2" name="START_DT2">
+                                </div>
+                                <span class="space">~</span>
+                                <div class="input">
+                                    <span class="space">종료</span>
+                                    <input type="date" id="END_DT2" name="END_DT2">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>최대참가자수</th>
+                        <td colspan="3"><input type="text"  class="inputTypeA" value="" placeholder=""> 명</td>
+                    </tr>
+                    <tr>
+                        <th>총상금</th>
+                        <td colspan="3"><input type="text" class="inputTypeA"  value="" placeholder=""> 원 (숫자만)</td>
+                    </tr>
+                    <tr>
+                        <th>사용조건</th>
+                        <td colspan="3"><textarea rows="10" cols="30"  name="content" style="height: 350px; "></textarea></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn large primary">저장</a>
+            </div>
+    
+            <div class="heading">
+                <h3>약관</h3>
+            </div>
+            <div class="table-type">
+                <table class="table-detail-type">
+                    <tbody>                   
+                        <tr>                       
+                            <td><textarea rows="10" cols="30"  name="content" style="height: 350px; "></textarea></td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn-wrap">
+                <a href="#" class="btn large primary">저장</a>
+            </div>
+
+            <div class="table-type mt30">
+                <table class="table-detail-type">
+                    <tbody>                   
+                    <tr>                       
+                        <td><textarea rows="10" cols="30"  name="content" style="height: 350px; "></textarea></td>
+                    </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn large primary">저장</a>
+            </div>
+
+            
+            <div class="heading">
+                <h3>과제안내</h3>
+            </div>
+            <div class="table-type">
+                <table class="table-detail-type">
+                    <tbody>                   
+                    <tr>                       
+                        <td><textarea rows="10" cols="30" name="content" style="height: 350px; "></textarea></td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <div class="box-file-input">
+                                <label><input type="file" id="loadFile" value="" name="file1" class="file-input"></label>
+                                <span class="files"><div class="fileNameLine" name="filename"></div></span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn large primary">저장</a>
+            </div>
+
+            <div class="heading">
+                <h3>대회규정</h3>
+            </div>
+            <div class="table-type">
+                <table class="table-detail-type">
+                    <tbody>                   
+                    <tr>                       
+                        <td><textarea rows="10" cols="30" name="content" style="height: 350px; "></textarea></td>
+                    </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn large primary">저장</a>
+            </div>
+
+            <div class="table-type mt30">
+                <table class="table-detail-type">
+                    <colgroup>
+                        <col width="17%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>                   
+                    <tr>
+                        <th>
+                            사용자페이지 노출여부
+                        </th>                
+                        <td>
+                            <div class="check-wrap">
+                                <input type="checkbox" id="DATA_FLAG" name="DATA_FLAG" checked>
+                                <label for="DATA_FLAG"><span></span>노출</label>
+                            </div>
+                        </td>
+                    </tr> 
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <a href="#" class="btn large">취소</a>
+                <a href="#" class="btn large primary">저장</a>
+                <a href="#" class="btn large">삭제</a>
+            </div>
+
+
+        </div>
+		<!-- // 대회 상세 -->
+        
+        
+
+	</div>
+	<!-- wrap -->
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+
+   
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">관리자님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- 메인 관리 -->
+		<div class="container">
+            <div class="path">
+                <ul>
+                    <li>Home</li>
+                    <li>메인 관리 </li>
+                </ul>
+            </div>
+            <div class="heading-top">
+                <h2>메인 관리</h2>
+            </div>
+            <div class="table-type ">
+                <div class="table-scope">* 등록하는 파일로 메인페이지의 이미지를 등록(변경)합니다. 이미지 크기 : 1200*300 pixel</div>
+                <table class="table-detail-type mt20">
+                    <colgroup>
+                        <col width="17%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                        <tr>                                               
+                            <th><input type="radio" name="mainImage" id="mainImage" class="inputRadioB" checked><label for="mainImage">기본이미지</label></th>
+                            <td colspan="3">
+                                <div class="box-file-input">
+                                    <label><input type="file" id="loadFile" value="" name="file1" class="file-input"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>                            
+                            <th><input type="radio" name="mainImage" id="subImage" class="inputRadioB"><label for="subImage">대회별 이미지</label></th>
+                            <td colspan="3">
+                                <div class="box-file-input">
+                                    <label><input type="file" id="loadFile2" value="" name="file2" class="file-input"></label>                                        
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn-wrap">
+                <a href="#"  class="btn large primary">저장</a>
+            </div>
+        </div>
+		<!-- // 메인 관리-->
+
+	</div>
+	<!-- wrap -->
+</body>
+
+</html>

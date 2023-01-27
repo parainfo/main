@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+   
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">윤홍복님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- 게시판 리스트 -->
+		<div class="container">
+            <div class="path">
+                <ul>
+                    <li>Home</li>
+                    <li>공지사항 관리</li>
+                </ul>
+            </div>
+            <div class="heading-top">
+                <h2>공지사항 관리</h2>
+            </div>
+            
+            <div class="table-type">
+                <div class="table-scope">
+                    <div class="all">
+                        <div class="mid-search">
+                            <select>
+                                <option value="">선택</option>
+                                <option value="NOTICE.TITLE">제목</option>
+                            </select>
+                            <div class="search-box">
+                                <input type="text" id="SEARCH_TXT" name="SEARCH_TXT" value="" placeholder="검색">
+                                <button type="button" class="btn-search">검색</button>
+                            </div>
+                        </div>
+                    </div>     
+                    <div>
+                        <div class="txt-r">    
+                            <a href="noticeDetail.html"  class="btn largeT primary">공지쓰기</a>
+                        </div>
+                   </div>             
+                </div>
+                <table class="table-list-type">
+                    <colgroup>
+                        <col width="5%">
+                        <col width="8%">
+                        <col width="*">
+                        <col width="8%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>노출여부</th>
+                            <th>제목</th>
+                            <th>첨부</th>
+                            <th>작성자</th>
+                            <th>등록일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td>13</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="noticeDetail.html" class="primary">테스트 공지</a></td>
+                            <td>
+                                <span class="file-icon">3</span>
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-05-30</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>12</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">한글 마지막 테스트</a></td>
+                            <td>
+                                <span class="file-icon">3</span>
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-29</td>
+                            <td>2</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>11</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">테스트입니다 테스트입니다 4월 27일</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-27</td>
+                            <td>7</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>10</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">테스트테스트테스트테스트</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-26</td>
+                            <td>26</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>9</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">테스트입니다</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-19</td>
+                            <td>11</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>8</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">테스트테스트테스트</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-19</td>
+                            <td>3</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>7</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">ㅌㅌ</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-19</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>6</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">테스트</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-19</td>
+                            <td>1</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>5</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary"></a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>윤홍복</td>
+                            <td>2022-04-19</td>
+                            <td>1</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>4</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">test</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-12-23</td>
+                            <td>6</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>3</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">%#%#%%</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>최영은</td>
+                            <td>2021-06-17</td>
+                            <td>3</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>2</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">2021년 제조데이터 공동활용 플랫폼 기술개발 사업 시행계획 공고</a></td>
+                            <td>
+                                
+                               <span class="file-icon">3</span>
+                               
+                            </td> 
+    
+                            <td>장은희</td>
+                            <td>2021-03-11</td>
+                            <td>28</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>1</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">AI 솔루션 실증 지원사업 참여기업 KAMP 인프라 신청 안내</a></td>
+                            <td>                                
+                               <span class="file-icon">1</span>                               
+                            </td>     
+                            <td></td>
+                            <td>2021-02-08</td>
+                            <td>36</td>
+                        </tr>                          
+                        
+                    </tbody>
+                </table>
+    
+            </div>
+            <div class="pageBox">
+                <select id="LINE_PER_PAGE" name="LINE_PER_PAGE">                  
+                    <option value="10">10개씩보기</option>
+                    <option value="15">15개씩보기</option>
+                    <option value="30">30개씩보기</option>
+                </select>
+           
+                <div class="page-area">
+                    <a class="prev" href="#"></a>
+                    <a class="on" href="#">1</a>
+                    <a class="" href="#">2</a>
+                    <a class="next" href="#"></a>
+                </div>
+            </div>
+          
+        </div>
+		<!-- // 게시판 리스트 -->
+
+	</div>
+	<!-- wrap -->
+</body>
+
+</html>

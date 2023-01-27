@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-cache"/>
+<title>인공지능 중소벤처 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css">
+    <link rel="shortcut icon" href="#">
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+</head>
+<body>
+
+
+<!-- wrap-->
+<div id="wrap">
+
+    <!-- header -->
+    <div class="header-wrap type02">
+        
+         <div class="header-box">
+            <div class="member-area">
+                <ul>
+                    <li><a href="" class="kampPortal">KAMP 서비스포탈</a></li>
+                    <li><a href="" class="kampNote">KAMP NOTE (AI 개발환경)</a></li>
+                    <li><a href="" >로그아웃</a></li>
+                    <li><a href=""><strong>홍길동님</strong></a></li>                    
+                </ul>
+            </div>
+        </div>
+        
+        <div class="header">
+            <h1>
+                <img src="../images/kamp_Logo.png" alt="KAMP 인공지능 중소벤처 경진대회">
+            </h1>
+            <div class="menu-wrap">
+                <ul class="menu">
+                    <li>
+                        <a href="contest/contestList.html">대회목록</a>
+                    </li>
+                    <li>
+                        <a href="notice/noticeList.html">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="faq/faqList.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+    <!-- // header -->
+    <!-- 슬라이드 -->
+    <div  class="main-info" >
+        <div class="owl-carousel" >
+            <div style="background: url(../images/banner01.png) no-repeat center top;">
+                <a href="https://www.naver.com" class="topLink">
+                    <div class="topTxtBox" >
+                        <p>2022년 K-인공지능 제조데이터 분석 경진대회</p>
+                    </div>
+                    <div class="bottonTxtBox">
+                        <pre>
+        스마트제조혁신추진단
+        일정 : 2022.05.09 ~ 2022.06.28</pre>
+                    </div>
+                </a>
+            </div>
+            <div style="background: url(../images/banner01.png) no-repeat center top;">
+                <a href="https://www.naver.com" class="topLink">
+                <div class="topTxtBox">
+                    <p>2022년 K-인공지능 제조데이터 분석 경진대회</p>
+                </div>
+                <div class="bottonTxtBox">
+                    <pre>
+    스마트제조혁신추진단
+    일정 : 2022.05.09 ~ 2022.06.28</pre>
+                </div>
+            </a>
+            </div>
+            <div style="background: url(../images/banner01.png) no-repeat center top;">
+                <a href="https://www.naver.com" class="topLink">
+                <div class="topTxtBox">
+                    <p>2022년 K-인공지능 제조데이터 분석 경진대회</p>
+                </div>
+                <div class="bottonTxtBox">
+                    <pre>
+    스마트제조혁신추진단
+    일정 : 2022.05.09 ~ 2022.06.28</pre>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 슬라이드 -->
+
+    <!-- container -->
+    <div class="footer-wrap">
+        <div class="footer">
+            <ul class="partner-log">
+                <li><a href="javascript:void(0)" onclick="goURL('https://www.mss.go.kr/')"><img src="../images/img_logo01.png" alt="중소기업벤처기업부"></a></li>
+                <li><a href="javascript:void(0)" onclick="goURL('http://www.smart-factory.kr')"><img src="../images/img_logo02.png" alt="KOSMO"></a></li>
+                <li><a href="javascript:void(0)" onclick="goURL('http://www.kaist.ac.kr')"><img src="../images/img_logo03.png" alt="KAIST"></a></li>
+                <li><a href="javascript:void(0)" onclick="goURL('http://www.nhn.com')"><img src="../images/img_logo04.png" alt="NHN"></a></li>
+            </ul>
+             <ul class="kamp-info">
+                <li><a href="/front/policy/agreement.jsp">이용약관</a></li> 
+	            <li><a href="/front/policy/info_privacy.jsp">개인정보 처리방침</a></li>
+	            <li><a href="/front/policy/email_security.jsp">이메일 무단 수집거부</a></li>
+            </ul>
+            <ul class="kamp-info">
+                <li>운영기관 : 042-350-1331</li>
+                <li>이메일 : kamp@kaist.ac.kr</li>
+                <li>대표자 : 이광형</li>
+                <li>사업자 등록번호 : 314-82-01980</li>
+
+            </ul>
+             <address>대전광역시 유성구 문지로 193 KAIST 문지캠퍼스 행정동  K-Industry 4.0 추진본부 | 제조AI빅데이터센터</address>
+        </div>
+    </div>
+
+</div>
+<!-- wrap -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+		items:1,
+		loop:true,
+		stagePadding:0,
+		margin:0,
+		nav:true,
+		navSpeed:1000,
+		dotsSpeed:1000,
+		autoplay:true,
+		autoplaySpeed:1000,
+		autoplayTimeout:6000,
+		autoplayHoverPause:true
+	});
+    $('.play').on('click',function(){
+		owl.trigger('play.owl.autoplay',[1000])
+	});
+	$('.stop').on('click',function(){
+		owl.trigger('stop.owl.autoplay')
+	});
+});
+    
+</script>
+
+</body>
+</html>
+

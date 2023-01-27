@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+   
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">관리자님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- 대회 리스트 -->
+		<div class="container">
+            <div class="path">
+                <ul>
+                    <li>Home</li>
+                    <li>대회목록</li>
+                </ul>
+            </div>
+            <div class="heading-top">
+                <h2>대회목록</h2>
+            </div>
+            
+            <div class="table-type">
+                <div class="table-scope">
+                    <div class="all">
+                        <div class="mid-search">
+                            <select>
+                                <option value="">선택</option>
+                                <option value="NOTICE.TITLE">제목</option>
+                            </select>
+                            <div class="search-box">
+                                <input type="text" id="SEARCH_TXT" name="SEARCH_TXT" value="" placeholder="검색">
+                                <button type="button" class="btn-search">검색</button>
+                            </div>
+                        </div>
+                    </div>     
+                    <div>
+                        <div class="txt-r">    
+                            <a href="contesDetail.html"  class="btn largeT primary">대회등록</a>
+                        </div>
+                   </div>             
+                </div>
+                <table class="table-list-type">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="8%">
+                        <col width="*">                        
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>노출여부</th>
+                            <th>대회명</th>                            
+                            <th>대회관리</th>
+                            <th>작성자</th>
+                            <th>등록일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td>13</td>
+                            <td>O</td> 
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">2022년 인공지능 온라인 경진대회</a></td>                                
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">Computer Vision 이상치 탐지 알고리즘 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">Computer Vision 이상치 탐지 알고리즘 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">가스*에너지분야 수요예측 모델 개발</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">2022년 인공지능 온라인 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">Computer Vision 이상치 탐지 알고리즘 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">Computer Vision 이상치 탐지 알고리즘 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">2022년 인공지능 온라인 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">2022년 인공지능 온라인 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="contestDetail.html" class="primary">2022년 인공지능 온라인 경진대회</a></td>
+                            <td><button type="button" class="btn small">수정</button></td>
+                            <td>관리자</td>
+                            <td>2022.05.09</td>
+                            <td>52351</td>
+                        </tr>               
+                        
+                    </tbody>
+                </table>
+    
+            </div>
+            <div class="pageBox">
+                <select id="LINE_PER_PAGE" name="LINE_PER_PAGE">                  
+                    <option value="10">10개씩보기</option>
+                    <option value="15">15개씩보기</option>
+                    <option value="30">30개씩보기</option>
+                </select>
+           
+                <div class="page-area">
+                    <a class="prev" href="#"></a>
+                    <a class="on" href="#">1</a>
+                    <a class="" href="#">2</a>
+                    <a class="next" href="#"></a>
+                </div>
+            </div>
+            
+          
+        </div>
+		<!-- // 대회 리스트 -->
+
+	</div>
+	<!-- wrap -->
+
+    <div class="layer-popup module-a system-pop" id="orderProduct1" data-bui-toggle="layerPopupTypeB" tabindex="0">
+		<div class="popup-item">
+			<div class="popup-area">
+				<div class="pop-title t03">
+					<h2></h2>
+					<button type="button" class="btn-close" data-bui-toggle-inactive="orderProduct1">닫기</button>
+				</div>
+				<div class="pop-container">
+					<ul class="data-list">
+						<li class="data-item"><div class="data-area"><span class="data-head">Version</span> <span class="data-body"></span></div></li>
+						<li class="data-item"><div class="data-area"><span class="data-head">vCPU</span> <span class="data-body"></span></div></li>
+						<li class="data-item"><div class="data-area"><span class="data-head">RAM</span> <span class="data-body"></span></div></li>
+						<li class="data-item"><div class="data-area"><span class="data-head">스토리지</span> <span class="data-body"></span></div></li>
+						<li class="data-item"><div class="data-area"><span class="data-head">GPU</span> <span class="data-body"></span></div></li>
+						<li class="data-item"><div class="data-area"><span class="data-head">네트워크</span> <span class="data-body"></span></div></li>
+						<li class="data-item"><div class="data-area"><span class="data-head">포트</span> <span class="data-body"></span></div></li>
+					</ul>
+					<!--<p class="summary">신청정보를 확인하세요 <br> 위와 같이 신청하시겠습니까?</p>--><!-- 2020-12-21 HTML 주석 처리-->
+
+				</div>
+
+				<div class="pop-btn-area">
+					<div class="btn-area">
+						<!--<button type="button" class="button" data-bui-toggle-inactive="orderProduct">신청</button>--><!-- 2020-12-21 HTML 주석 처리-->
+						<button type="button" class="button primary" data-bui-toggle-inactive="orderProduct1">확인</button>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

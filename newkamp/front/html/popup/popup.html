@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+
+
+
+        <script>       
+            $(document).ready(function() {
+                $(".popup01").click(function(){
+                    $('#popTemplate').addClass('popAreaShow');
+                });
+
+                $(".bthcancle, .popClose").click(function(){
+                    $('#popTemplate').removeClass('popAreaShow');
+                });
+            });
+        </script>
+   
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<button class="popup01">참가팀 상세</button>	
+	</div>
+
+	<!-- wrap -->
+    <!-- popTemplate S -->
+    <div class="popArea" id="popTemplate">
+        <div class="popTypeA" >
+            <h2>참가 팀 상세
+                <button class="popClose"></button>
+            </h2>
+
+            <div class="table-type mt20">
+                <table class="table-detail-type">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="*">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>팀명</th>
+                            <td>CUBE J.</td>
+                        </tr>
+                        <tr>
+                            <th>참여구분</th>
+                            <td>직장인</td>
+                        </tr>
+                        <tr>
+                            <th>프로젝트명</th>
+                            <td>제조 효율 관리를 위한 환경 및 종속변수 기반 수율 예측 모델 개발</td>
+                        </tr>
+                        <tr>
+                            <th>팀장</th>
+                            <td>kimmanu 김제조 ㈜현대알비</td>
+                        </tr>
+                        <tr>
+                            <th>팀원</th>
+                            <td>
+                                <ul>
+                                    <li>Choibyg 최병주 (주)현대알비</li>
+                                    <li>jeongdw 정동우 (주)현대알비</li>
+                                    <li>Ahnjeong 안정환 (주)현대알비</li>
+                                    <li>Leejaejoon 이재준 (주)현대알비</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>보고서</th>
+                            <td>
+                                <ul class="file">                                    
+                                    <li class="icon-pdf"><a href="javascript:void(0)">K-인공지능 제조데이터 분석 경진대회 과제공개.pdf (66KB)</a></li>                                   
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>소스코드</th>
+                            <td>
+                                <ul class="file">                                    
+                                    <li class="icon-pdf"><a href="javascript:void(0)">경진대회 보고서 양식.pdf (75KB)</a></li>                                    
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>발표자료</th>
+                            <td>
+                                <ul class="file">
+                                    <li class="icon-zip"><a href="javascript:void(0)">경진대회용 사출성형기 데이터셋.zip (23989KB)</a></li>                                      
+                                </ul>
+                            </td>
+                        </tr>                   
+                    </tbody>
+                </table>                
+            </div>
+            
+            <div class="btnBoxA mt20">
+                <button class="btnTypeA">확인</button>                    
+            </div>
+
+        </div>        
+    </div>
+    <!-- New Template E -->
+    
+</body>
+
+</html>

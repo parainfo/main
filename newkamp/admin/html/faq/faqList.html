@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<title>KAMP 경진대회</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+   
+</head>
+<body>
+
+	<!-- wrap-->
+	<div id="wrap">
+		<!-- header -->
+
+		<div class="header-wrap">
+            <div class="member-area">
+                <a href="#">로그아웃</a>
+                <a href="#" class="on">관리자님 반갑습니다</a>
+            </div>
+			<div class="header">
+				<h1>
+					<img src="../../images/logo.png" id="top" style="cursor:pointer" alt="KAMP 경진대회">
+				</h1>
+				<div class="menu-wrap">
+					<ul class="menu">
+						<li>
+							<a href="../contest/contestList.html">대회목록</a>
+						</li>
+                        <li>
+							<a href="../main/mainset.html">메인관리</a>
+						</li>
+						<li>
+							<a href="../notice/noticeList.html">공지사항</a>
+						</li>
+						<li>
+							<a href="../faq/faqList.html">FAQ</a>
+						</li>
+					</ul>
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- // header -->
+
+		<!-- FAQ 리스트 -->
+		<div class="container">
+            <div class="path">
+                <ul>
+                    <li>Home</li>
+                    <li>FAQ 관리</li>
+                </ul>
+            </div>
+            <div class="heading-top">
+                <h2>FAQ 관리</h2>
+            </div>
+            
+            <div class="table-type">
+                <div class="table-scope">
+                    <div class="all">
+                        <div class="mid-search">
+                            <select>
+                                <option value="">선택</option>
+                                <option value="NOTICE.TITLE">제목</option>
+                            </select>
+                            <div class="search-box">
+                                <input type="text" id="SEARCH_TXT" name="SEARCH_TXT" value="" placeholder="검색">
+                                <button type="button" class="btn-search">검색</button>
+                            </div>
+                        </div>
+                    </div>     
+                    <div>
+                        <div class="txt-r">    
+                            <a href="faqDetail.html"  class="btn largeT primary">쓰기</a>
+                        </div>
+                   </div>             
+                </div>
+                <table class="table-list-type">
+                    <colgroup>
+                        <col width="5%">
+                        <col width="8%">
+                        <col width="*">
+                        <col width="8%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>노출여부</th>
+                            <th>제목</th>
+                            <th>첨부</th>
+                            <th>작성자</th>
+                            <th>등록일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <td>10</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">제조AI란 무엇인가요?</a></td>
+                            <td>
+                                <span class="file-icon">3</span>
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>9</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">KAMP란 무엇인가요?</a></td>
+                            <td>
+                                <span class="file-icon">3</span>
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>8</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">AI 컨설팅 및 AI 솔루션 실증지원사업이 무엇인가요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>7</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">제조AI데이터셋이란 무엇인가요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>6</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">KAMP는 어떤 인프라를 제공하나요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>5</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">포탈에 등재된 제조AI데이터셋의 자료들을 개인적으로 사용해도 될까요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>4</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">제조AI데이터셋은 12개 외에 추가될 계획이 있나요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>3</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">분석체험에서는 5대 주요설비에 대해서만 가능한가요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td></td>
+                            <td>2021-01-29</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>2</td>
+                            <td>O</td>
+                            <td class="txt-l"><a href="#" class="primary">제조데이터를 공유하거나 사고 파는 기능이 있나요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>유길동</td>
+                            <td>2021-01-28</td>
+                            <td>0</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>1</td>
+                            <td>X</td>
+                            <td class="txt-l"><a href="#" class="primary">제조AI솔루션은 어디에서 확인 가능한가요?</a></td>
+                            <td>
+                                
+                            </td> 
+    
+                            <td>유길동</td>
+                            <td>2021-01-28</td>
+                            <td>0</td>
+                        </tr>
+                          
+                        
+                    </tbody>
+                </table>
+    
+            </div>
+            <div class="pageBox">
+                <select id="LINE_PER_PAGE" name="LINE_PER_PAGE">                  
+                    <option value="10">10개씩보기</option>
+                    <option value="15">15개씩보기</option>
+                    <option value="30">30개씩보기</option>
+                </select>
+           
+                <div class="page-area">
+                    <a class="prev" href="#"></a>
+                    <a class="on" href="#">1</a>
+                    <a class="" href="#">2</a>
+                    <a class="next" href="#"></a>
+                </div>
+            </div>
+          
+        </div>
+		<!-- // FAQ 리스트 -->
+
+	</div>
+	<!-- wrap -->
+</body>
+
+</html>
