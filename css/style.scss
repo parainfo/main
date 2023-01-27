@@ -1,0 +1,6 @@
+.btnTypeA {
+    width: 200px; height: 40px; background: bisque;
+    &:hover {
+        background: #000000;
+        }
+}

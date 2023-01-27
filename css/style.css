@@ -1,0 +1,10 @@
+.btnTypeA {
+  width: 200px;
+  height: 40px;
+  background: bisque;
+}
+.btnTypeA:hover {
+  background: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */
