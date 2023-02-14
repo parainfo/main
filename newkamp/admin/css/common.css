@@ -106,7 +106,6 @@ table caption,
 .header-wrap .header .menu-wrap .menu > li.active > a {color:#fff; }
 .header-wrap .header .menu-wrap .menu > li > a:hover {color:#fff;}
 
-
 .header-wrap .header .special-btn {float:right;}
 .header-wrap .header .special-btn a {display:block; font-size: 18px; color:#fff; position: relative; color:#ccc}
 .header-wrap .header .special-btn a:hover  {font-weight: 500; }
@@ -114,12 +113,10 @@ table caption,
 .header-wrap .header .special-btn.active a {font-weight: 500; color:#fff;}
 .header-wrap .header .special-btn.active a:after{display:block; content: ''; position: absolute; top:34px; left:0; right:0;  height: 6px; background-color: #fff; z-index: 1 }
 
-
 .header-wrap .header .menu-wrap .menu > li.active > a:after,
 .header-wrap .header .menu-wrap .menu > li:hover > a:after {display:block; content: ''; position: absolute; top:34px; left:0; right:0; width: 100%; height: 6px; background-color: #fff; z-index: 1 }
 .header-wrap .header .menu-wrap .menu > li.on > .sub-menu,
 .header-wrap .header .menu-wrap .menu > li:hover > .sub-menu {display: flex; justify-content: center}
-
 
 
 .header-wrap .header .menu-wrap .sub-menu {display: none; position:absolute; left:0; right:0; border-bottom:1px solid #e5e5e5;  padding-top: 30px; padding-bottom: 20px; box-sizing: border-box; background-color: #f9f9f9 }
@@ -165,7 +162,6 @@ table caption,
 .table-type .table-scope .all span {color: #6292ec;}
 .table-type .table-scope > div > a {vertical-align: bottom;  margin-left: 10px}
 
-
     /* 테이블 디테일 */
 .table-type .table-detail-type {border-top: 2px solid #999;}
 .table-type .table-detail-type th {background: #f5f6f7; border-bottom: 1px solid #ededed; padding:6px 30px 6px; height: 60px; box-sizing: border-box; text-align: left; font-size: 16px; vertical-align: middle}
@@ -175,7 +171,6 @@ table caption,
 .table-type .table-detail-type td input {font-size: 16px}
 .table-type .table-detail-type + .table-detail-type {margin-top:20px; border-top: 1px solid #ededed; }
 .table-type .table-detail-type.mt20 {margin-top: 20px;}
-
 
 .table-type + .table-type {margin-top: 40px}
 
