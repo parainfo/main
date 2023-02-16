@@ -297,7 +297,7 @@ h2.h2-title {font-size: 34px; font-weight: 300}
 /* 메인 */
 #wrap.main {min-height: 900px; height: 100%; background-size: cover; align-items: center; background-repeat: no-repeat; background-position: center center; background-image: url('../../images/cpt/main/bg_page.png'); position:relative;}
 #wrap.main .container {padding-bottom:30px}
-#wrap .header-wrap.type02 { background-color: #141A3C}
+#wrap .header-wrap.type02 { background-color: #06132C; height: 200px;}
 #wrap.main .header-wrap.type02 .header .menu-wrap .menu > li > a {color:#fff;}
 #wrap.main .header-wrap.type02 .sub-menu {border-top:1px solid #1c1f20; background-color: rgba(20, 26, 60, .9);  }
 #wrap.main .header-wrap.type02 .sub-menu .menu {border-left:1px solid #1c1f20; }
