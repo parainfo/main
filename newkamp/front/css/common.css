@@ -104,7 +104,7 @@ table caption,
 .header-wrap .sub-menu .menu-box .menu:first-of-type {border:0;}
 
 .header-wrap .sub-menu .menu-box ul {}
-.header-wrap .sub-menu .menu-box li {margin-bottom: 8px;}
+.header-wrap .sub-menu .menu-box li {margin-bottom: 16px;}
 .header-wrap .sub-menu .menu-box li a {display: block; font-weight: 400; margin-left: 16px; width: auto;  font-size: 12px; color:#000000; position:relative}
 .header-wrap .sub-menu .menu-box li a:hover {color: #ffffff;}
 .header-wrap .sub-menu .depth3 {margin-top: 5px;}
