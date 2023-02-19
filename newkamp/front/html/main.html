@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="#">
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../js/common_ui.js"></script>
 </head>
 <body>
 
@@ -24,70 +25,122 @@
          <div class="header-box">
             <div class="member-area">
                 <ul>
-                    <li><a href="" >로그아웃</a></li>
-                    <li><a href=""><strong>홍길동님</strong></a></li>                    
+                    <li>
+                    <a href="" >로그인</a>
+                          / 
+                    <a href="">회원가입</a>
+                    </li>                    
                 </ul>
             </div>
         </div>
-        
-        <div class="header">
-            <h1>
-                <img src="../images/kamp_Logo.png" alt="경기미래차 포털">
-            </h1>
-            <div class="menu-wrap">
-                <ul class="menu">
-                    <li>
-                        <a href="contest/contestList.html">대회목록</a>
-                    </li>
-                    <li>
-                        <a href="notice/noticeList.html">공지사항</a>
-                    </li>
-                    <li>
-                        <a href="faq/faqList.html">FAQ</a>
-                    </li>
-                </ul>
+
+        <div class="header-area">
+
+            <div class="header">
+                <h1>
+                    경기미래차 포털
+                </h1>
+                <div class="menu-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="info/b11.html">서비스 소개</a>
+                        </li>
+                        <li>
+                            <a href="dataSet/c12.html">테이터셋</a>
+                        </li>
+                        <li>
+                            <a href="platform/d11.html">플래폼 서비스</a>
+                        </li>
+                        <li>
+                            <a href="dataCon/e11.html">데이터 콘텐츠</a>
+                        </li>
+                        <li>
+                            <a href="notice/f11.html">지식공유</a>
+                        </li>
+                    </ul>
+                    <div class="searchArea">
+                        <input type="text" class="searchBox" placeholder="Search">
+                        <button class="btnBearch"></button>
+                    </div>
+                </div>
+            </div>  
+            
+            <!-- Sub Menu -->
+            <div class="sub-menu" style="display: none;">
+                <div class="menu-box">
+                    <div class="menu mCheck1">
+                        <strong class="tit">서비스 소개</strong>
+                        <ul>
+                            <li><a href="info/b11.html">미래차 플랫폼 소개</a></li>
+                            <li><a href="info/b12.html">데이터셋, 가이드북 소개</a></li>
+                            <li><a href="info/b13.html">혁신 네트워크 소개</a></li>
+                            <li><a href="info/b14.html">가이드라인 소개</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu mCheck_2">
+                        <strong class="tit">데이터셋</strong>
+                        <ul>
+                            <li><a href="dataSet/C111.html">키워드 및 필터입력</a></li>
+                            <li><a href="dataSet/C12.html">데이터 리스트 조회</a></li>
+                            <li><a href="dataSet/c131.html">데이터 상세 정보 조회</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu mCheck_3">
+                        <strong class="tit">플랫폼 서비스</strong>
+                        <ul>
+                            <li><a href="platform/d11.html">플랫폼 서비스 소개</a>
+                                <ul class="depth3">
+                                    <li><a href="platform/d12.html">&#8226; 설비 효율 관리 서비스</a></li>
+                                    <li><a href="platform/d13.html">&#8226; 사출공정 지능화 서비스</a></li>
+                                    <li><a href="platform/d14.html">&#8226; 지능형 에너지 관리 서비스</a></li>
+                                    <li><a href="platform/d15.html">&#8226; 정밀 가공 지능화 서비스</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="platform/d2.html">이용안내</a></li>
+                            <li><a href="platform/d31.html">플랫폼 서비스 신청</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu mCheck_4">
+                        <strong class="tit">데이터 콘텐츠</strong> 
+                        <ul>
+                            <li><a href="dataCon/e11.html">활용 USE-CASE</a></li>
+                            <li><a href="dataCon/e21.html">제조데이터컨설팅 및 실증사례</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu mCheck_5">
+                        <strong class="tit">지식 공유</strong> 
+                        <ul>
+                            <li><a href="notice/f11.html" >공지사항</a></li>
+                            <li><a href="notice/f21.html" >자료실</a></li>
+                            <li><a href="notice/f31.html" >FAQ</a></li>
+                            <li><a href="notice/f41.html" >관련기사</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
             </div>
-        </div>        
+            <!-- Sub Menu -->
+        </div>
     </div>
     <!-- // header -->
+
     <!-- 슬라이드 -->
     <div  class="main-info" >
         <div class="owl-carousel" >
             <div style="background: url(../images/banner01.png) no-repeat center top;">
-                <a href="https://www.naver.com" class="topLink">
-                    <div class="topTxtBox" >
-                        <p>2022년 K-인공지능 제조데이터 분석 경진대회</p>
-                    </div>
-                    <div class="bottonTxtBox">
-                        <pre>
-        스마트제조혁신추진단
-        일정 : 2022.05.09 ~ 2022.06.28</pre>
-                    </div>
-                </a>
+                <a href="#" class="topLink"> </a>
             </div>
-            <div style="background: url(../images/banner01.png) no-repeat center top;">
-                <a href="https://www.naver.com" class="topLink">
-                <div class="topTxtBox">
-                    <p>2022년 K-인공지능 제조데이터 분석 경진대회</p>
-                </div>
-                <div class="bottonTxtBox">
-                    <pre>
-    스마트제조혁신추진단
-    일정 : 2022.05.09 ~ 2022.06.28</pre>
-                </div>
-            </a>
+            <div style="background: url(../images/banner02.png) no-repeat center top;">
+                <a href="#" class="topLink"></a>
             </div>
-            <div style="background: url(../images/banner01.png) no-repeat center top;">
-                <a href="https://www.naver.com" class="topLink">
-                <div class="topTxtBox">
-                    <p>2022년 K-인공지능 제조데이터 분석 경진대회</p>
-                </div>
-                <div class="bottonTxtBox">
-                    <pre>
-    스마트제조혁신추진단
-    일정 : 2022.05.09 ~ 2022.06.28</pre>
-                </div>
-                </a>
+            <div style="background: url(../images/banner03.png) no-repeat center top;">
+                <a href="#" class="topLink"></a>
+            </div>
+            <div style="background: url(../images/banner04.png) no-repeat center top;">
+                <a href="#" class="topLink"></a>
+            </div>
+            <div style="background: url(../images/banner05.png) no-repeat center top;">
+                <a href="#" class="topLink"></a>
             </div>
         </div>
     </div>
@@ -97,10 +150,12 @@
     <div class="footer-wrap">
         <div class="footer">
             <ul class="partner-log">
-                <li><a href="javascript:void(0)" onclick="goURL('https://www.mss.go.kr/')"><img src="../images/img_logo01.png" alt="중소기업벤처기업부"></a></li>
-                <li><a href="javascript:void(0)" onclick="goURL('http://www.smart-factory.kr')"><img src="../images/img_logo02.png" alt="KOSMO"></a></li>
-                <li><a href="javascript:void(0)" onclick="goURL('http://www.kaist.ac.kr')"><img src="../images/img_logo03.png" alt="KAIST"></a></li>
-                <li><a href="javascript:void(0)" onclick="goURL('http://www.nhn.com')"><img src="../images/img_logo04.png" alt="NHN"></a></li>
+                <li><a href="#" target="_blank"><img src="../images/fLogo01.png" alt="중소기업벤처기업부"></a></li>
+                <li><a href="#" target="_blank"><img src="../images/fLogo02.png" alt="경기도"></a></li>
+                <li><a href="#" target="_blank"><img src="../images/fLogo03.png" alt="KOSMO"></a></li>
+                <li><a href="#" target="_blank"><img src="../images/fLogo04.png" alt="경기테크노파크"></a></li>
+                <li><a href="#" target="_blank"><img src="../images/fLogo05.png" alt="KETI"></a></li>
+                <li><a href="#" target="_blank"><img src="../images/fLogo06.png" alt="MICUBE SOLUTION"></a></li>
             </ul>
              <ul class="kamp-info">
                 <li><a href="/front/policy/agreement.jsp">이용약관</a></li> 
@@ -108,13 +163,10 @@
 	            <li><a href="/front/policy/email_security.jsp">이메일 무단 수집거부</a></li>
             </ul>
             <ul class="kamp-info">
-                <li>운영기관 : 042-350-1331</li>
-                <li>이메일 : kamp@kaist.ac.kr</li>
-                <li>대표자 : 이광형</li>
-                <li>사업자 등록번호 : 314-82-01980</li>
-
+                <li>운영기관 : 경기테크노파크</li>
             </ul>
-             <address>대전광역시 유성구 문지로 193 KAIST 문지캠퍼스 행정동  K-Industry 4.0 추진본부 | 제조AI빅데이터센터</address>
+             <address>경기도 안산시 상록구 해안로 705 | TEL. 031.500.3022 | FAX. 031.500.3301</address>
+             <span>Copyright(c) Copyright 2012 GYEONGGI TECHNOPARK All rights reserved</span>
         </div>
     </div>
 
