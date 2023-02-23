@@ -66,7 +66,7 @@ table caption,
 
 /* header */
 /*.header-wrap {height: 96px; overflow: hidden; background-color: #5979b9; box-sizing: border-box;  position: relative}*/
-.header-wrap {position: relative; height: 200px; background-color: #5979b9; box-sizing: border-box; background: url(../images/gnbBg.png) no-repeat center; }
+.header-wrap {position: relative; height: 200px; box-sizing: border-box; background:#06132C url(../images/gnbBg.png) no-repeat center; }
 .header-wrap .header-box {position: relative; width: 1200px; height: 52px;  margin: 0 auto;}
 /*.header-wrap .member-area {text-align: right; box-sizing: border-box; width: 1200px; margin: 0 auto; height: 42px; position:relative}*/
 .header-wrap .member-area {text-align: right;  font-size: 12px; box-sizing: border-box; width: 1200px; margin: 0 auto; height: 52px; position:relative; color:#fff;}
@@ -321,7 +321,11 @@ h2.h2-title {font-size: 34px; font-weight: 300}
 #wrap.main .footer-wrap .kamp-info li {color: #fff;}
 #wrap.main .footer-wrap .kamp-info li:after {background-color: #8b9aba;}
 #wrap.main .footer-wrap address {color: #fff;}
-.main-info {position: relative; overflow: hidden; width: 100%; text-align: center; height: 648px;}
+.main-info {position: relative; overflow: hidden; width: 100%; text-align: center; height: 648px; background: #06132C;}
+.main-info .bannerTxt { z-index: 10; position: absolute; padding-top: 20px; width: 100%; height: 240px; left: 0; top: 204px; color: #ffffff; gap: 10px; background:rgba(6, 21, 44, 0.6) ;}
+.main-info .bannerTxt .txt01 {font-size: 40px;}
+.main-info .bannerTxt .txt02 {margin-top: 20px; font-size: 64px;}
+.main-info .bannerTxt .txt03 {font-size: 40px; line-height: 46px;}
 .main-info div.owl-carousel {overflow: hidden; position: relative; width: 100%; height: 648px;}
 .main-info div.owl-carousel div.owl-stage-outer, .main-info div.owl-carousel div.owl-stage-outer .owl-stage, .owl-item{ width: 100%; height: 648px;}
 .main-info div.owl-carousel div.owl-stage-outer .owl-item > DIV {position: relative; height: 648px;}
@@ -336,11 +340,11 @@ h2.h2-title {font-size: 34px; font-weight: 300}
     cursor: pointer;}
 .main-info div.owl-carousel .owl-dot.active {background: #ffffff;}
 
-.main-info div.owl-carousel .owl-nav {position: absolute;  top: 0; left: 0; width: 100%; height: 648px;}
+.main-info div.owl-carousel .owl-nav {display: none; position: absolute;  top: 0; left: 0; width: 100%; height: 648px;}
 .main-info div.owl-carousel .owl-nav .owl-prev {position: absolute; width: 15%; height: 648px; top: 0; left: 0;}
 .main-info div.owl-carousel .owl-nav .owl-prev::before {content: "<"; font-size: 50px;  color: #404040; font-family: Impact;}
 .main-info div.owl-carousel .owl-nav .owl-prev:hover::before {color: #ffffff;}
-.main-info div.owl-carousel .owl-nav .owl-next {position: absolute; width: 15%; height: 648px; top: 0; right: 0;}
+.main-info div.owl-carousel .owl-nav .owl-next {z-index: 20; position: absolute; width: 15%; height: 648px; top: 0; right: 0;}
 .main-info div.owl-carousel .owl-nav .owl-next::before {content: ">"; font-size: 50px;  color: #404040; font-family: Impact;}
 .main-info div.owl-carousel .owl-nav .owl-next:hover::before {color: #ffffff;}
 .main-info div.owl-carousel div.owl-stage-outer { }
