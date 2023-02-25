@@ -107,6 +107,8 @@ table caption,
 .header-wrap .sub-menu .menu-box li {margin-bottom: 16px;}
 .header-wrap .sub-menu .menu-box li a {display: block; font-weight: 400; margin-left: 16px; width: auto;  font-size: 12px; color:#000000; position:relative}
 .header-wrap .sub-menu .menu-box li a:hover {color: #ffffff;}
+.header-wrap .sub-menu .menu-box li a.disabled {color: rgba(0, 0, 0, .5); cursor: default;} 
+
 .header-wrap .sub-menu .depth3 {margin-top: 5px;}
 .header-wrap .sub-menu .depth3 li {padding-left: 10px; margin-bottom: 5px;}
 
@@ -471,10 +473,10 @@ h2.h2-title {font-size: 34px; font-weight: 300}
 .container .scope .item-box {font-size: 0}
 .container .scope .item-box {display:flex; justify-content: space-between; align-items: center}
 .container .scope select + .search {margin-left:10px}
-.container .scope .search {border:1px solid #dddddd; position: relative}
-.container .scope .search button {width: 60px; color:#fff; font-size:0px;  height: 44px; box-sizing: border-box;position:absolute; top:0; right:0; }
-.container .scope .search button:before{display: inline-block; content: ''; background: url("../../images/cpt/sp_icon.png") -118px -35px no-repeat; width: 20px; height: 20px; vertical-align: middle; margin-right: 0px;}
-.container .scope .search input[type='text'] {width: 100%; height: 44px; border:0; box-sizing: border-box; font-size: 16px; font-weight: 300; padding: 0 80px 0 20px;box-sizing: border-box; }
+.container .scope .search {border:1px solid #dddddd; position: relative; width: 360px;}
+.container .scope .search button {width: 120px; color:#fff; font-size:16px; padding-left: 20px;  height: 44px; box-sizing: border-box; position:absolute; top:0; right:0; background:#06132C url("../images/icoSearch2.png") no-repeat left 28px  center; }
+
+.container .scope .search input[type='text'] {width: 100%; height: 44px; border:0; box-sizing: border-box; font-size: 16px; font-weight: 300; padding: 0 140px 0 20px;box-sizing: border-box; }
 
 
 
@@ -554,6 +556,8 @@ h2.h2-title {font-size: 34px; font-weight: 300}
 
 .table-type .table-list-type tbody td.tableTitA {padding-left: 20px; text-align: left;}
 .table-type .table-list-type tbody td.tableTitA span {font-size: 14px;}
+.table-type .table-list-type tbody td.inTable {padding: 0;}
+.table-type .table-list-type tbody td.inTable  table td { border-bottom: none;}
 
 
 .table-type .g-box {border:1px solid #f3f3f3; background-color: #f9f9f9; margin:0 auto; text-align: center; width: 80px; height: 36px; line-height: 36px; /*font-family: 'roboto';*/ font-weight: 500}
@@ -823,7 +827,7 @@ select::-ms-expand { /* for IE 11 */
     font-size: 15px;
 }
 
-
+.btnDown {display: inline-block; width: 20px; height: 20px; background: url(../images/btnDown.png) no-repeat center;}
 
 
 /* 로딩 */
@@ -921,7 +925,7 @@ select::-ms-expand { /* for IE 11 */
 .tabTypeB a.on {color: rgba(51, 51, 51, 1); border: 1px solid #dddddd; border-bottom: 1px solid #ffffff;}
 
 .pageBox {position: relative;}
-.pageBox select {position: absolute; top: 0; left: 0;}
+.pageBox select {position: absolute; top: -3px; right: 0;}
 .kampPortal {padding-left: 20px; background: url(../../images/cpt/kampPortal.png) no-repeat left 0 center;}
 .kampNote {padding-left: 20px; background: url(../../images/cpt/kampNote.png) no-repeat left 0 center;}
 

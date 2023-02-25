@@ -17,10 +17,7 @@
 			$(".header-wrap .header .menu-wrap .menu > li").removeClass('active');
 		});
 
-
+		$("a.disabled").removeAttr("href");
 	});
-
-
-
-
 })();
+

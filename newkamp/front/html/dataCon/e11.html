@@ -94,16 +94,16 @@
                             <strong class="tit">데이터콘텐츠</strong> 
                             <ul>
                                 <li><a href="../dataCon/e11.html">제조데이터기초컨설팅사례</a></li>
-                                <li><a href="../dataCon/e12.html">ZEZO-X플랫폼활용사례</a></li>
+                                <li><a href="../dataCon/e12.html" class="disabled">ZEZO-X플랫폼활용사례</a></li>
                             </ul>
                         </div>
                         <div class="menu mCheck_5">
                             <strong class="tit">지식공유</strong> 
                             <ul>
-                                <li><a href="../notice/f11.html" >공지사항</a></li>
-                                <li><a href="../notice/f21.html" >자료실</a></li>
-                                <li><a href="../notice/f31.html" >FAQ</a></li>
-                                <li><a href="../notice/f41.html" >관련기사</a></li>
+                                <li><a href="../notice/f11.html" class="disabled">공지사항</a></li>
+                                <li><a href="../notice/f21.html" class="disabled">자료실</a></li>
+                                <li><a href="../notice/f31.html" class="disabled">FAQ</a></li>
+                                <li><a href="../notice/f41.html" class="disabled">관련기사</a></li>
                             </ul>
                         </div>
                         
@@ -115,65 +115,24 @@
 		<!-- // header -->
 
         <!-- 대회 리스트 -->
-        <div class="search-box">
-            <h2 class="h2-title">데이터셋 찾기</h2>
-            <div class="search">
-                <input type="text" id="AI_SEARCH" name="AI_SEARCH" value="" placeholder="찾으시는 데이터를 검색해보세요">
-                <button type="text">검색</button>
-            </div>
-        </div>
-		<div class="container pt">
+        
+		<div class="container">
+            <h2>제조 데이터 기초컨설팅 사례</h2>
 
             <div class="scope">
-                <div class="txt">총 제조AI데이터셋 수 : <span> 24</span>개</div>
+                <div class="txt">총 참여사례 수 : <span> 24</span>개</div>
                 <div class="item-box">
-                    <select id="EQUIP_SEL" name="EQUIP_SEL">
-                        <option value="" selected="">업종</option>
-                       <option value="">뿌리(용접접합) </option>
-                       <option value="">기타</option>
-                       <option value="">정밀가공</option>
-                       <option value="">사출성형 </option>
-                       <option value="">뿌리(소성가공)</option>
-                       <option value="">식품가공 </option>
-                       <option value="">뿌리(표면처리) </option>
-                       <option value="">뿌리(열처리)</option>
-                       <option value="">화장품</option>
-                       <option value="">전자부품</option>
-                       <option value="">뿌리(주조)</option>
-                       <option value="">기계부품</option>
-                       <option value="">의류 </option>
+                    
+                    <select id="" name="">
+                        <option value="" selected="">공정</option>
+                        <option value="">제목</option>
+                        <option value="">수요기업</option>
+                        <option value="">공급기업</option>
                     </select>
-                    <select id="GUBUN_SEL" name="GUBUN_SEL">
-                        <option value="" selected="">목적</option>
-                        <option value="">공급망 최적화</option>
-                        <option value="">공정 자동화</option>
-                        <option value="">데이터 자동관리</option>
-                        <option value="">디지털 트윈</option>
-                        <option value="">생산계획 최적화</option>
-                        <option value="">생산공정 최적화</option>
-                        <option value="">스마트 유지보수</option>
-                        <option value="">스마트 작업보조</option>
-                        <option value="">시뮬레이션</option>
-                        <option value="">예지보전</option>
-                        <option value="">자원 최적화</option>
-                        <option value="">품질보증</option>
-                        <option value="">기타</option>
-                    </select>
-                    <select id="FILE_TYPE_SEL" name="FILE_TYPE_SEL">
-                        <option value="" selected="">유형</option>
-                        <option value="">xml</option>
-                        <option value="">csv </option>
-                        <option value="">txt</option>
-                        <option value="">jpg</option>
-                        <option value="">bmp</option>
-                        <option value="">wav</option>
-                        <option value="">test</option>
-                    </select>
-                    <select id="WDATE_SEL" name="WDATE_SEL">
-                        <option value="" selected="">정렬</option>
-                        <option value="">최신순</option>
-                        <option value="">조회수순</option>
-                    </select>
+                    <div class="search">
+                        <input type="text" id="SEARCH_TXT" name="SEARCH_TXT" value="" placeholder="검색">
+                        <button onclick="doSearch();">검색</button>
+                    </div>
                 </div>                
             </div>
 
@@ -183,8 +142,10 @@
                     <colgroup>
                         <col width="8%">
                         <col width="8%">
-                        <col width="24%">
                         <col width="*">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="7%">
                         <col width="10%">
                         <col width="10%">
                     </colgroup>
@@ -192,28 +153,24 @@
                         <tr>
                             <th>No.</th>
                             <th>공정</th>
-                            <th>설비</th>
                             <th>제목</th>
-                            <th>유형</th>
+                            <th>수요기업</th>
+                            <th>공급기업</th>
+                            <th>첨부파일</th>
+                            <th>등록일</th>
                             <th>조회수</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr style="cursor:pointer" >
                             <td>9999</td>
-                           <td class="txt-l">NC가공공정</td>
-                           <td class="txt-l">금형가공설비</td>
-                           <td class="txt-l">모터의 온도와 속도를 활용한 최대생산시간의 예측</td>
-                           <td><p class="g-box">csv</p></td>
-                           <td>12123</td>
-                        </tr>
-                        <tr style="cursor:pointer" >
-                            <td>9999</td>
-                           <td class="txt-l">NC가공공정</td>
-                           <td class="txt-l">금형가공설비</td>
-                           <td class="txt-l">모터의 온도와 속도를 활용한 최대생산시간의 예측</td>
-                           <td><p class="g-box">csv</p></td>
-                           <td>12123</td>
+                           <td>사출공정</td>
+                           <td class="txt-l">사출공정 데이터셋 분석 및 불량 진단</td>
+                           <td>유창스틸산업</td>
+                           <td>에이비에이치</td>
+                           <td><button class="btnDown"></button></td>
+                           <td>2023-02-02</td>
+                           <td>12037</td>
                         </tr>                        
                     </tbody>
                 </table>
