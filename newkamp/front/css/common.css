@@ -80,6 +80,7 @@ table caption,
 /* 임시 헤더 타입 */
 /*.header-wrap .header {height: auto}*/
 .header-wrap .header h1 {position: absolute; box-sizing: border-box; width: 240px; height: 148px; top: 0; left: 0px; padding: 8px; line-height: 80px; color: #ffffff; text-align: center; background: url(../images/logoBg.png) no-repeat center top;}
+.header-wrap .header h1 a {color: #ffffff;}
 .header-wrap .header .menu-wrap {padding-bottom: 60px; float:left; margin-top: 8px; margin-left: 240px; width: calc(100% - 240px);}
 .header-wrap .header .menu-wrap:after {display:block; content: ''; clear:both;}
 .header-wrap .header .menu-wrap .menu {display: flex; margin-top: 8px; margin-left: 8px;  float:left; height: 64px;}
